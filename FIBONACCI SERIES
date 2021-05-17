@@ -1,0 +1,22 @@
+#FIBONACCI SERIES
+print("FIBONACCI SERIES")
+n=int(input("Enter how many numbers of fibonnacci series you want to obtain : "))
+a=0
+b=1
+print(a,b,sep=',',end=',')
+#using for loop
+for i in range(n-1):
+    c=a+b
+    a,b=b,c
+    print(c,end=',')
+#using while loop
+print('\n')
+p=0
+a=0
+b=1
+print(a,b,sep=',',end=',')
+while p<n-1:
+    c=a+b
+    a,b=b,c
+    print(c,end=',')
+    p+=1
