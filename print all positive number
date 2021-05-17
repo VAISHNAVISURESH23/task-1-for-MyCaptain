@@ -1,0 +1,10 @@
+#program to print all positive numbers in a range
+a=input("enter a list of numbers : ")
+l=a.split(",")
+l1=[]
+for i in range(len(l)):
+    if int(l[i])>0:
+        l1.append(int(l[i]))
+    else:
+        continue
+print("the list of positive numbers from the inputted list is : ",l1)
